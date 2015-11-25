@@ -5,9 +5,9 @@ Lets you create or update Amazon API Gateway APIs from a Swagger or RAML API rep
 ## Usage
 
     docker run --rm \
-      && -v ~/.aws/credentials:/root/.aws/credentials \
-      && -v `pwd`:/HOST_DIR \
-      && alexisno/aws-api-import <ARGS>
+      -v ~/.aws/credentials:/root/.aws/credentials \
+      -v `pwd`:/HOST_DIR \
+      alexisno/aws-api-import <ARGS>
 
 * Inject your AWS credentials and/or config in the container using a volume:
   * `-v ~/.aws/credentials:/root/.aws/credentials`
