@@ -20,6 +20,6 @@ RUN git clone https://github.com/awslabs/aws-apigateway-importer.git \
   && cd aws-apigateway-importer && mvn assembly:assembly
 
 
-WORKDIR /root/aws-apigateway-importer
+COPY /entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["bash", "/root/aws-apigateway-importer/aws-api-import.sh"]
+ENTRYPOINT ["bash", "/entrypoint.sh"]
