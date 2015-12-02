@@ -39,7 +39,7 @@ Inject the API representation file using a volume: ``-v `pwd`/path/to/swagger.js
       -e AWS_ACCESS_KEY_ID=******************** \
       -e AWS_SECRET_ACCESS_KEY=**************************************** \
       -e AWS_DEFAULT_REGION=us-east-1 \
-      -v `pwd`/path/to/swagger.js:/swagger.json
+      -v `pwd`/path/to/swagger.json:/swagger.json
       alexisno/aws-api-import <ARGS>
 
 Use the arguments you would normally use with [`aws-api-import`](https://github.com/awslabs/aws-apigateway-importer). Don't forget to use the volume cited above to specify the path to the definition file.
