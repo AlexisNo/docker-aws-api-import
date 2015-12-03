@@ -8,7 +8,7 @@ Lets you create or update Amazon API Gateway APIs from a Swagger or RAML API rep
 
 ### Using environment variables
 
-You can pass environment variables to the container to set your AWS credentials and/or config
+You can pass environment variables to the container to set AWS credentials and/or config.
 
     docker run --rm \
       -e AWS_ACCESS_KEY_ID=******************** \
@@ -21,7 +21,7 @@ You can pass environment variables to the container to set your AWS credentials 
 
 ### Using volumes
 
-Alternatively , you can inject your AWS credentials and/or config in the container using a volume.
+Alternatively, it is possible to inject AWS credentials and/or config in the container using volumes.
 
     docker run --rm \
       -v ~/.aws/credentials:/root/.aws/credentials \
