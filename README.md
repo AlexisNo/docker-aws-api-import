@@ -42,7 +42,7 @@ Inject the API representation file using a volume: ``-v `pwd`/path/to/swagger.js
       -v `pwd`/path/to/swagger.json:/swagger.json
       alexisno/aws-api-import <ARGS>
 
-Use the arguments you would normally use with [`aws-api-import`](https://github.com/awslabs/aws-apigateway-importer). Don't forget to use the volume cited above to specify the path to the definition file.
+Use the arguments you would normally use with [`aws-api-import`](https://github.com/awslabs/aws-apigateway-importer). Don't forget to use the volume cited above to specify the path to the API representation file.
 
 `<ARGS>` examples:
 
